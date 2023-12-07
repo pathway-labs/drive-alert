@@ -99,7 +99,7 @@ GOOGLE_CREDS=examples/pipelines/drive_alert/secrets.json  # Default location of 
 Install the required packages:
 
 ```bash
-pip install --upgrade -r requirements.txt
+pip install --upgrade -r requirements_dev.txt
 ```
 
 #### Run the Pathway API
