@@ -10,8 +10,8 @@ env_api_host = os.environ.get("PATHWAY_REST_CONNECTOR_HOST", "127.0.0.1:8080")
 # Sidebar for user input
 with st.sidebar:
     st.markdown("## API Configuration")
-    # Allow user to input API host and port
-    api_host = st.text_input("API Address", value=env_api_host)
+    st.markdown("Note that you need to run the backend service first to use the app.")
+    api_host = st.text_input("Pathway backend API Address", value=env_api_host)
 
     st.markdown("## How to query your data\n")
     st.markdown(
@@ -23,7 +23,7 @@ ask to be alerted.\n"""
     )
     st.markdown(
         """[View the source code on GitHub](
-https://github.com/pathwaycom/llm-app/examples/pipelines/drive_alert/app.py)"""
+https://github.com/pathway-labs/drive-alert)"""
     )
     st.markdown("## Current Alerts:\n")
 
